@@ -3,225 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DeepLATAM - Grupo de Estudio</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        body {
-            background-color: #f8f9fa;
-            color: #2c3e50;
-            line-height: 1.6;
-            margin: 0;
-        }
-
-        nav {
-            background-color: #1a3c2e;
-            padding: 1rem;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-        }
-
-        .nav-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .site-title {
-            color: #ffd700;
-            font-size: 1.5rem;
-            font-weight: bold;
-            text-decoration: none;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 2rem;
-        }
-
-        .nav-links a {
-            color: white;
-            text-decoration: none;
-            font-weight: 500;
-        }
-
-        .hero {
-            padding: 4rem 2rem;
-            background: linear-gradient(135deg, #1a3c2e 0%, #2c3e50 100%);
-            color: white;
-            text-align: center;
-        }
-
-        .hero h1 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-        }
-
-        .hero p {
-            font-size: 1.2rem;
-            max-width: 600px;
-            margin: 0 auto 2rem;
-        }
-
-        .cta-button {
-            display: inline-block;
-            background-color: #ffd700;
-            color: #1a3c2e;
-            padding: 1rem 2rem;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            transition: all 0.3s ease;
-        }
-
-        .cta-button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-        }
-
-        .topics {
-            padding: 4rem 2rem;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .topics-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-
-        .topic-card {
-            background: white;
-            border-radius: 10px;
-            padding: 2rem;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease;
-        }
-
-        .topic-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .topic-card h3 {
-            color: #1a3c2e;
-            margin-bottom: 1rem;
-        }
-
-        footer {
-            background-color: #1a3c2e;
-            color: white;
-            padding: 2rem;
-            margin-top: 4rem;
-        }
-
-        .footer-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        .social-links {
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-            margin-top: 1rem;
-        }
-
-        .social-links a {
-            color: white;
-            text-decoration: none;
-            font-size: 1.5rem;
-        }
-
-        @media (max-width: 768px) {
-            .nav-links {
-                display: none;
-            }
-
-            .hero h1 {
-                font-size: 2rem;
-            }
-
-            .topics-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Machine Learning</title>
+    <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
-    <nav>
-        <div class="nav-container">
-            <a href="#" class="site-title">DeepLATAM</a>
-            <div class="nav-links">
-                <a href="#temas">Temas</a>
-                <a href="#recursos">Recursos</a>
-                <a href="#proyectos">Proyectos</a>
-                <a href="#contacto">Contacto</a>
-            </div>
-        </div>
-    </nav>
-
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Bienvenidos a DeepLATAM</h1>
-            <p>Aprende, colabora y crece en el mundo de las Ciencias de la Computación y el Machine Learning</p>
-            <a href="https://github.com/SanThought/deeplatam" class="cta-button">
-                Únete a nosotros
-            </a>
-        </div>
-    </section>
-
-    <section class="topics" id="temas">
-        <div class="topics-grid">
-            <!-- Topic Cards with Links to their respective Pages -->
-            <div class="topic-card">
-                <h3><a href="topics/machine-learning.html" style="color: #1a3c2e; text-decoration: none;">Machine Learning</a></h3>
-                <p>Explora los fundamentos y aplicaciones del aprendizaje automático</p>
-            </div>
-            <div class="topic-card">
-                <h3><a href="topics/neural-networks.html" style="color: #1a3c2e; text-decoration: none;">Redes Neuronales</a></h3>
-                <p>Dive into neural networks and deep learning</p>
-            </div>
-            <div class="topic-card">
-                <h3><a href="topics/programming.html" style="color: #1a3c2e; text-decoration: none;">Programación</a></h3>
-                <p>Desarrolla habilidades en Python, R, y más</p>
-            </div>
-            <div class="topic-card">
-                <h3><a href="topics/data-science.html" style="color: #1a3c2e; text-decoration: none;">Data Science</a></h3>
-                <p>Análisis de datos y visualización</p>
-            </div>
-            <div class="topic-card">
-                <h3><a href="topics/artificial-intelligence.html" style="color: #1a3c2e; text-decoration: none;">Inteligencia Artificial</a></h3>
-                <p>Explora el futuro de la IA</p>
-            </div>
-            <div class="topic-card">
-                <h3><a href="topics/systems-and-algorithms.html" style="color: #1a3c2e; text-decoration: none;">Sistemas y Algoritmos</a></h3>
-                <p>Optimización y diseño de algoritmos</p>
-            </div>
-        </div>
-    </section>
-
+    <header>
+        <nav>
+            <a href="../index.html">Volver a DeepLATAM</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Machine Learning</h1>
+        <p>El aprendizaje automático es un campo de la inteligencia artificial que se enfoca en el desarrollo de algoritmos y técnicas que permiten a las computadoras aprender de los datos y mejorar su rendimiento en tareas específicas.</p>
+        <h2>Tipos de aprendizaje automático</h2>
+        <ul>
+            <li>Aprendizaje supervisado</li>
+            <li>Aprendizaje no supervisado</li>
+            <li>Aprendizaje por refuerzo</li>
+        </ul>
+        <h2>Aplicaciones del aprendizaje automático</h2>
+        <ul>
+            <li>Reconocimiento de imágenes</li>
+            <li>Procesamiento de lenguaje natural</li>
+            <li>Predicción de series temporales</li>
+        </ul>
+        <h2>Recursos para aprender más</h2>
+        <ul>
+            <li><a href="https://www.coursera.org/learn/machine-learning">Curso de Machine Learning en Coursera</a></li>
+            <li><a href="https://www.tensorflow.org/">TensorFlow</a></li>
+            <li><a href="https://scikit-learn.org/">Scikit-learn</a></li>
+        </ul>
+    </main>
     <footer>
-        <div class="footer-content">
-            <p>Contacto: <a href="mailto:contacto@deeplatam.com">contacto@deeplatam.com</a></p>
-            <div class="social-links">
-                <a href="https://github.com/SanThought/deeplatam"><i class="fab fa-github"></i></a>
-                <a href="https://x.com/S4nS4nti4g0"><i class="fab fa-twitter"></i></a>
-            </div>
-            <p>© 2023 DeepLATAM. Todos los derechos reservados.</p>
-        </div>
+        <p>&copy; 2023 DeepLATAM</p>
     </footer>
 </body>
 </html>
