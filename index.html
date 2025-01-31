@@ -1,65 +1,159 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BoyaIA - Aprendizaje Comunitario en IA</title>
+    <title>DeepLATAM - Grupo de Estudio</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
         body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background: #F9F9F9;
+            background-color: #f5f5f5;
             color: #333;
+            line-height: 1.6;
         }
+
         header {
-            background: #006400; /* Verde profundo (Boyacá, Colombia) */
+            background-color: #006400;
             color: white;
-            padding: 20px;
-            font-size: 1.5em;
+            padding: 2rem;
+            text-align: center;
         }
-        h1 {
-            color: #FF4500; /* Naranja vibrante */
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
         }
-        .content {
-            padding: 20px;
-            max-width: 800px;
-            margin: auto;
+
+        .welcome {
+            text-align: center;
+            padding: 2rem 0;
         }
-        .cta {
-            background: #FF4500;
-            color: white;
-            padding: 10px 20px;
+
+        .purpose {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .topics {
+            list-style: none;
+            display: grid;
+            gap: 1rem;
+            padding: 2rem 0;
+        }
+
+        .topic-item {
+            background-color: white;
+            padding: 1rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .cta-button {
             display: inline-block;
-            margin-top: 20px;
+            background-color: #FF4500;
+            color: white;
+            padding: 1rem 2rem;
             text-decoration: none;
             border-radius: 5px;
+            margin-top: 2rem;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #FF3000;
+        }
+
+        footer {
+            background-color: #006400;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            margin-top: 4rem;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            color: white;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 10px;
+            }
+            
+            header {
+                padding: 1rem;
+            }
+            
+            .welcome {
+                padding: 1rem 0;
+            }
         }
     </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header>
-        🌎 BoyaIA - Iniciativa Comunitaria de Aprendizaje en IA 🚀
+        <h1>DeepLATAM</h1>
+        <p>Grupo de Estudio en Ciencias de la Computación y Machine Learning</p>
     </header>
 
-    <div class="content">
-        <h1>¡Bienvenid@s a BoyaIA!</h1>
-        <p>Exploramos Inteligencia Artificial, Aprendizaje Profundo y Modelos de Lenguaje para nuestra comunidad.</p>
-        <p>Estamos construyendo un espacio colaborativo para aprender, compartir e innovar en ML y AI.</p>
-        
-        <h2>📖 ¿Qué Aprenderás Aquí?</h2>
-        <ul>
-            <li>Conceptos fundamentales de Machine Learning</li>
-            <li>Redes Neuronales y Deep Learning</li>
-            <li>Modelos de Lenguaje y NLP</li>
-            <li>Aplicaciones prácticas en Colombia y LATAM</li>
-        </ul>
+    <div class="container">
+        <section class="welcome">
+            <h2>¡Bienvenidos!</h2>
+            <p>Aprende y colabora con nosotros en el fascinante mundo de la Inteligencia Artificial y Ciencias de la Computación.</p>
+        </section>
 
-        <h2>🤝 ¿Cómo Contribuir?</h2>
-        <p>Queremos construir esto juntos. ¡Tu participación es clave!</p>
-        <a class="cta" href="https://github.com/YOUR-USERNAME/boyaia-site">📌 Contribuye en GitHub</a>
+        <section class="purpose">
+            <h2>¿Quiénes somos?</h2>
+            <p>Somos un grupo diverso de entusiastas y estudiantes apasionados por el aprendizaje y la colaboración en torno a las ciencias de la computación y el machine learning.</p>
+            <p>Nuestra misión es crear un espacio inclusivo y accesible para aprender juntos y compartir conocimientos.</p>
+        </section>
 
-        <h2>🚀 Próximamente: Nuestro Wiki</h2>
-        <p>Estamos preparando nuestra wiki en Miraheze. ¡Estate atento!</p>
+        <section class="topics">
+            <h2>Temas Principales</h2>
+            <ul class="topics-list">
+                <li class="topic-item">Machine Learning</li>
+                <li class="topic-item">Redes Neuronales</li>
+                <li class="topic-item">Programación (Python, R, etc.)</li>
+                <li class="topic-item">Data Science</li>
+                <li class="topic-item">Inteligencia Artificial</li>
+                <li class="topic-item">Sistemas y Algoritmos</li>
+            </ul>
+        </section>
+
+        <a href="https://github.com/deeplatam" class="cta-button">
+            Únete a nosotros en GitHub
+        </a>
     </div>
+
+    <footer>
+        <p>Contacto: <a href="mailto:contacto@deeplatam.com" class="social-links">contacto@deeplatam.com</a></p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <p>© 2023 DeepLATAM. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
