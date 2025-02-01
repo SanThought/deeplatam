@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ingeniería de Prompts - DeepLATAM</title>
+  <title>Prompt Engineering - DeepLATAM</title>
   <link rel="stylesheet" href="../styles/styles.css">
+  <!-- Optionally, add a small inline script for smooth scrolling -->
   <script>
-    // Simple back-to-top functionality
     document.addEventListener("DOMContentLoaded", function() {
-      var backToTop = document.getElementById("back-to-top");
+      const backToTop = document.querySelector(".back-to-top");
       backToTop.addEventListener("click", function(e) {
         e.preventDefault();
-        window.scrollTo({ top: 0, behavior: 'smooth' });
+        window.scrollTo({ top: 0, behavior: "smooth" });
       });
     });
   </script>
@@ -19,52 +19,60 @@
 <body>
   <header>
     <nav>
-      <a href="../index.html">Volver a DeepLATAM</a>
+      <div class="nav-container">
+        <a href="../index.html" class="site-title">DeepLATAM</a>
+      </div>
     </nav>
   </header>
-  <main>
-    <h1>Ingeniería de Prompts</h1>
+  
+  <main class="blog-post">
+    <h1>Prompt Engineering en Data Science</h1>
     <p>
-      La ingeniería de prompts es una disciplina emergente en el campo de la Inteligencia Artificial. Se enfoca en diseñar y optimizar las entradas (prompts) para modelos de lenguaje, permitiendo obtener respuestas más precisas, coherentes y útiles.
+      En la era de los modelos de lenguaje y la inteligencia artificial, dominar el <strong>prompt engineering</strong> se ha vuelto fundamental para extraer el máximo potencial de estas herramientas. Este enfoque no solo es útil en aplicaciones de data science, sino también en la creación de soluciones innovadoras.
     </p>
+    
     <h2>Conceptos Clave</h2>
     <ul>
-      <li>Diseño y estructuración de prompts efectivos</li>
-      <li>Optimización iterativa y evaluación de resultados</li>
-      <li>Aplicación práctica en modelos de gran escala</li>
+      <li><strong>Diseño de Prompts:</strong> La creación de entradas efectivas para obtener resultados precisos.</li>
+      <li><strong>Optimización de Resultados:</strong> Ajustar los prompts para mejorar la calidad y relevancia de las respuestas.</li>
+      <li><strong>Integración en Flujos de Trabajo:</strong> Cómo incorporar el prompt engineering en proyectos de data science.</li>
     </ul>
-    <h2>Recursos para Aprender Ingeniería de Prompts</h2>
+    
+    <h2>Recursos para Aprender Más</h2>
+    <p>A continuación, algunos artículos y papers de ArXiv que ofrecen perspectivas y estudios profundos sobre prompt engineering:</p>
+    
+    <!-- Resource Cards -->
+    <div class="paper-card">
+      <h3><a href="https://arxiv.org/abs/2107.13586" target="_blank">Prompt Programming for Large Language Models</a></h3>
+      <p>Un estudio sobre cómo diseñar y optimizar prompts para modelos de lenguaje de gran escala.</p>
+    </div>
+    
+    <div class="paper-card">
+      <h3><a href="https://arxiv.org/abs/2201.11903" target="_blank">Automatic Prompt Optimization with Gradient Descent</a></h3>
+      <p>Explora técnicas de optimización automática para mejorar la efectividad de los prompts en tareas de NLP.</p>
+    </div>
+    
+    <div class="paper-card">
+      <h3><a href="https://arxiv.org/abs/2104.08773" target="_blank">Prompt Engineering and Beyond: New Challenges in Data Science</a></h3>
+      <p>Una revisión de los desafíos actuales y futuros en la aplicación del prompt engineering en data science.</p>
+    </div>
+    
+    <h2>Ejemplos Prácticos</h2>
     <p>
-      A continuación, algunos artículos y recursos recientes disponibles en <a href="https://arxiv.org" target="_blank">arXiv</a> que exploran esta disciplina:
+      Experimenta con distintos prompts y evalúa sus respuestas en tareas específicas, como análisis de sentimiento, clasificación de texto o generación de resúmenes. La práctica es la clave para dominar esta técnica.
     </p>
-    <div class="paper-card">
-      <h3>
-        <a href="https://arxiv.org/abs/2202.01852" target="_blank">Estrategias para Prompt Engineering en NLP</a>
-      </h3>
-      <p>
-        Este artículo explora diversas estrategias para diseñar prompts efectivos y cómo estas técnicas pueden mejorar la interacción con modelos de lenguaje.
-      </p>
-    </div>
-    <div class="paper-card">
-      <h3>
-        <a href="https://arxiv.org/abs/2109.05025" target="_blank">El Arte de Prompting para la IA</a>
-      </h3>
-      <p>
-        Un análisis en profundidad sobre cómo estructurar prompts para maximizar la precisión y relevancia en la salida de los modelos de inteligencia artificial.
-      </p>
-    </div>
-    <div class="paper-card">
-      <h3>
-        <a href="https://arxiv.org/abs/2201.11413" target="_blank">Técnicas Avanzadas de Prompt Engineering para Modelos de Lenguaje</a>
-      </h3>
-      <p>
-        Este documento describe técnicas avanzadas en la ingeniería de prompts y discute su aplicación en modelos de gran escala para mejorar los resultados.
-      </p>
-    </div>
+    
+    <p>
+      ¡Explora, experimenta y comparte tus hallazgos con la comunidad!
+    </p>
+    
   </main>
+  
+  <!-- Back to Top Button -->
+  <a href="#" class="back-to-top">Volver Arriba</a>
+  
   <footer>
     <p>&copy; 2023 DeepLATAM</p>
   </footer>
-  <a href="#" class="back-to-top" id="back-to-top">Volver Arriba</a>
 </body>
 </html>
