@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursos - DeepLATAM</title>
+    <style>
+        /* Match the project's styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            color: #2c3e50;
+            line-height: 1.6;
+        }
+
+        nav {
+            background-color: #1a3c2e;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .site-title {
+            color: #ffd700;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .hero {
+            padding: 4rem 2rem;
+            background: linear-gradient(135deg, #1a3c2e 0%, #2c3e50 100%);
+            color: white;
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        .resources-container {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+        }
+
+        .resources-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .resource-card {
+            background: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .resource-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .resource-card h3 {
+            color: #1a3c2e;
+            margin-bottom: 0.75rem;
+        }
+
+        .resource-card p {
+            color: #555;
+            margin-bottom: 1rem;
+        }
+
+        .resource-link {
+            display: inline-block;
+            color: #1a3c2e;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .resource-link:hover {
+            color: #2c3e50;
+        }
+
+        .section-title {
+            color: #1a3c2e;
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            padding-top: 2rem;
+        }
+
+        footer {
+            background-color: #1a3c2e;
+            color: white;
+            padding: 2rem;
+            margin-top: 4rem;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .resources-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="site-title">DeepLATAM</a>
+            <div class="nav-links">
+                <a href="index.html">Inicio</a>
+                <a href="index.html#temas">Temas</a>
+                <a href="index.html#recursos" class="active">Recursos</a>
+                <a href="index.html#contacto">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1>Recursos</h1>
+        <p>Descubre proyectos y comunidades Open Source que impulse tu aprendizaje y colaboración</p>
+    </section>
+
+    <main class="resources-container">
+        <h2 class="section-title">Para la Ciencia y la Sociedad</h2>
+        <div class="resources-grid">
+            <div class="resource-card">
+                <h3>Code for Science & Society</h3>
+                <p>Herramientas de código abierto para ciencia, periodismo de datos e infraestructura pública</p>
+                <a href="https://codeforscience.org/blog" class="resource-link">Visitar sitio</a>
+            </div>
+            <div class="resource-card">
+                <h3>Open Source Design</h3>
+                <p>Mejora del diseño en proyectos de código abierto (estudios de caso de UI/UX)</p>
+                <a href="https://opensourcedesign.net/blog" class="resource-link">Visitar sitio</a>
+            </div>
+        </div>
+
+        <h2 class="section-title">Para Artistas y Creativos</h2>
+        <div class="resources-grid">
+            <div class="resource-card">
+                <h3>Libre Arts</h3>
+                <p>Herramientas creativas de código abierto (Blender, Krita) e interviews con artistas</p>
+                <a href="https://librearts.org" class="resource-link">Visitar sitio</a>
+            </div>
+            <div class="resource-card">
+                <h3>Open Source Photography</h3>
+                <p>Flujos de trabajo fotográficos usando Darktable, GIMP y herramientas abiertas</p>
+                <a href="https://opensourcephotography.org" class="resource-link">Visitar sitio</a>
+            </div>
+            <div class="resource-card">
+                <h3>Creative Commons Blog</h3>
+                <p>Cultura abierta, arte y licencias (hosteado en GitHub Pages)</p>
+                <a href="https://creativecommons.org/blog" class="resource-link">Visitar sitio</a>
+            </div>
+        </div>
+
+        <h2 class="section-title">Para Pensadores y Mentes Curiosas</h2>
+        <div class="resources-grid">
+            <div class="resource-card">
+                <h3>Civic Tech Field Guide</h3>
+                <p>Proyectos y herramientas de tecnología cívica para impacto social</p>
+                <a href="https://civictech.guide" class="resource-link">Visitar sitio</a>
+            </div>
+            <div class="resource-card">
+                <h3>Open Neuroscience</h3>
+                <p>Herramientas de neurociencia de código abierto e investigación</p>
+                <a href="https://open-neuroscience.com" class="resource-link">Visitar sitio</a>
+            </div>
+            <div class="resource-card">
+                <h3>The Rust Blog</h3>
+                <p>Actualizaciones y tutoriales sobre el lenguaje de programación Rust</p>
+                <a href="https://blog.rust-lang.org" class="resource-link">Visitar sitio</a>
+            </div>
+        </div>
+
+        <h2 class="section-title">Para Comunidades Latinoamericanas</h2>
+        <div class="resources-grid">
+            <div class="resource-card">
+                <h3>MetaDocencia</h3>
+                <p>Recursos educativos abiertos para educadores de habla hispana</p>
+                <a href="https://metadocencia.org" class="resource-link">Visitar sitio</a>
+            </div>
+            <div class="resource-card">
+                <h3>Python en Español</h3>
+                <p>Tutoriales y documentación de Python en español</p>
+                <a href="https://python-es.readthedocs.io" class="resource-link">Visitar sitio</a>
+            </div>
+            <div class="resource-card">
+                <h3>Escuela de Datos</h3>
+                <p>Alfabetización en datos y datos abiertos para América Latina</p>
+                <a href="https://escueladedatos.org" class="resource-link">Visitar sitio</a>
+            </div>
+            <div class="resource-card">
+                <h3>Codeando México</h3>
+                <p>Proyectos de tecnología cívica en México (herramientas de código abierto para el bien social)</p>
+                <a href="https://codeandomexico.org" class="resource-link">Visitar sitio</a>
+            </div>
+        </div>
+
+        <h2 class="section-title">Nicho y Multidisciplinario</h2>
+        <div class="resources-grid">
+            <div class="resource-card">
+                <h3>R-Ladies</h3>
+                <p>Diversidad de género en la programación R</p>
+                <a href="https://blog.rladies.org" class="resource-link">Visitar sitio</a>
+            </div>
+            <div class="resource-card">
+                <h3>Open Healthcare Blog</h3>
+                <p>Tecnología médica de código abierto y estándares FHIR</p>
+                <a href="https://openhealthcare.org" class="resource-link">Visitar sitio</a>
+            </div>
+            <div class="resource-card">
+                <h3>Open Source Astronomy</h3>
+                <p>Telescopios DIY y software de astronomía de código abierto</p>
+                <a href="https://opensourceastro.org" class="resource-link">Visitar sitio</a>
+            </div>
+        </div>
+
+        <div class="resources-grid" style="margin-top: 2rem;">
+            <div class="resource-card" style="grid-column: 1 / -1; text-align: center;">
+                <h3>¿Cómo participar?</h3>
+                <p>La mayoría de estos sitios enlazan a sus repositorios de GitHub (busca botones de "Editar esta página" o "Colaborar").</p>
+                <p>Únete a las comunidades a través de Discord/Slack o foros en sus sitios web.</p>
+                <p>Para hispanohablantes, <strong>MetaDocencia</strong> y <strong>Python en Español</strong> son excelentes puntos de partida.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>Contacto: <a href="mailto:contacto@deeplatam.com">contacto@deeplatam.com</a></p>
+            <div class="social-links">
+                <a href="https://github.com/SanThought/deeplatam"><i class="fab fa-github"></i></a>
+                <a href="https://x.com/S4nS4nti4g0"><i class="fab fa-twitter"></i></a>
+            </div>
+            <p>© 2023 DeepLATAM. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
